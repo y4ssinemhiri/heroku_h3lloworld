@@ -4,9 +4,6 @@ app.get('/webhook', (req, res) => {
   
   const VERIFY_TOKEN = process.env.VERIFY_TOKEN;
   
-  
-})
-
 function handleMessage(sender_psid, received_message) {
 
   let response;
@@ -55,3 +52,5 @@ function callSendAPI(sender_psid, response) {
     }
   }); 
 }
+
+})
