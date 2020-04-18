@@ -77,32 +77,6 @@ app.get('/webhook', (req, res) => {
   }
 });
 
-Last login: Sun Apr 19 00:08:53 on ttys003
-
-The default interactive shell is now zsh.
-To update your account to use zsh, please run `chsh -s /bin/zsh`.
-For more details, please visit https://support.apple.com/kb/HT208050.
-MacBook-Pro-de-Yassine:~ yassine$ cd Documents/git/
-heroku_h3lloworld/ var.env            verifytoken        
-MacBook-Pro-de-Yassine:~ yassine$ cd Documents/git/heroku_h3lloworld/
-MacBook-Pro-de-Yassine:heroku_h3lloworld yassine$ ls
-app.js			node_modules		package.json
-index.js		package-lock.json	var.env
-MacBook-Pro-de-Yassine:heroku_h3lloworld yassine$ nano app.js 
-
-
-
-
-
-
-
-
-
-
-
-
-  GNU nano 2.0.6               File: app.js                                     
-
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACESS_TOKEN;
 
 app.get('/webhook', (req, res) => {
