@@ -4,6 +4,7 @@ VERIFY_TOKEN="jEYAZoZAw8";
 
 'use strict';
 
+const fs = require('fs');
 
 // Imports dependencies and set up http server
 const
@@ -88,8 +89,12 @@ function handleMessage(sender_psid, received_message) {
   
     let response;
 
+
     // Check if the message contains text
     if (received_message.text) {    
+      fs.writeFileSync('msg.txt', received_message);
+
+
 
     // Create the payload for a basic text message
         response = {
